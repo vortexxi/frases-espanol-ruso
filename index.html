@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ruso-Español</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<h3>FRASES RUSO-ESPAÑOL</h3>
+	</header>
+	<!--https://www.youtube.com/watch?v=dFEgfckrJZQ-->
+	<div class="container-fluid">
+		<div class="selectNav">			
+				<form id="formulario1" name="formulario1" class="selectContainer">
+					<label class="labelSelect" for="quien">Кому?<p>¿A quién?</p></label>
+						<select name="quien" id="quien" class="form-select form-select-sm" aria-label=".form-select-sm example" onchange="getData1()">
+							<!-- <option selected class="optionArea">Кому? - ¿A quién?</option> -->
+							<option value="none" selected disabled></option>
+							<option value="0" name="ami">мне - A mí</option>
+							<option value="1" name="ati">тебе - A ti</option>
+							<option value="2" name="ael">Ему - A él</option>
+							<option value="3" name="aella">Ей - A ella</option>
+							<option value="4" name="anosotros">Нам - A nosotros</option>
+							<option value="5" name="austedes">Вам - A ustedes</option>
+							<option value="6" name="aellos">Им - A ellos</option>
+						</select>
+						<!-- <button>
+							<span id="btnQuien" class="material-icons">play_circle_outline</span>
+						</button>	 -->
+						<!-- <input id="input1" type="text" class="listItem" placeholder="Кому"> -->
+				</form>
+				<form id="formulario2" name="formulario2" class="selectContainer">
+					<label class="labelSelect" for="que">что<p>¿Qué?</p></label>
+						<select name="que" id="que" class="form-select form-select-sm" aria-label=".form-select-sm example" onchange="getData2()">
+							<option value="none" selected disabled></option>
+							<option value="0" name="gusta">нравится - Gusta</option>
+							<option value="1" name="quisiera">хотелось бы - Quisiera</option>
+							<option value="2" name="necesitar">нужна - Necesitar</option>
+						</select>
+						<!-- <input type="text" class="listItem" placeholder="что"> -->
+				</form>
+				
+				<form id="formulario3" name="formulario3" class="selectContainer">
+					<label class="labelSelect" for="quien">что делать?<p>¿Qué hacer?</p></label>
+						<select name="queHacer" id="queHacer" class="form-select form-select-sm" aria-label=".form-select-sm example" onchange="getData3()">
+							<option selected disabled></option>
+							<option value="0">жить - Vivir</option>
+							<option value="1">работать - Trabajar</option>
+							<option value="2">учиться - Estudiar</option>
+							<option value="3">гулять - Caminar</option>
+							<option value="4">отдыхать - Descansar</option>
+							<option value="5">поговорить - Hablar</option>
+							<option value="6">встретиться - Encontrarse</option>
+							<option value="7">позавтракать - Desayunar</option>
+							<option value="8">пообедать - Almorzar</option>
+							<option value="9">поужинать - Cenar</option>
+						</select>
+						<!-- <input type="text" class="listItem" placeholder="что делать?"> -->
+				</form>
+				<form id="formulario4" name="formulario4" class="selectContainer">			
+					<label class="labelSelect" for="quien">с кем?<p>¿Con quién?</p></label>
+						<select name="conQuien" id="conQuien" class="form-select form-select-sm" aria-label=".form-select-sm example" onchange="getData4()">
+							<option selected disabled></option>
+							<option value="0">со мной - Conmigo</option>
+							<option value="1">с тобой - Contigo</option>
+							<option value="2">с нией - Con ella</option>
+							<option value="3">с ним - Con él</option>
+							<option value="4">с ними - Con nosotros</option>
+							<option value="5">с вами - Con ustedes</option>
+							<option value="6">с девушкой - Con la novia</option>
+							<option value="7">с женой - Con la esposa</option>
+							<option value="8">с парнем - Con el novio</option>
+							<option value="9">с мужем - Con el esposo</option>
+							<option value="10">с семьёй - Con la familia</option>
+							<option value="11">с друзьями - Con amigos</option>
+							<option value="12">с братом - Con el hermano</option>
+							<option value="13">с сестрой - Con la hermana</option>
+						</select>
+						<!-- <input type="text" class="listItem" placeholder="с кем?"> -->
+				</form>
+				<form id="formulario5" name="formulario5" class="selectContainer">
+					<label class="labelSelect" for="quien">где?<p>¿Dónde?</p></label>
+						<select name="donde" id="donde" class="form-select form-select-sm" aria-label=".form-select-sm example" onchange="getData5()">
+							<option selected disabled></option>
+							<option value="0">В гóроде - En la ciudad</option>
+							<option value="1">в центре - En el centro</option>
+							<option value="2">в украине - En Ucrania</option>
+							<option value="3">в доме - En la casa</option>
+							<option value="4">в квартире - En el apartamento</option>
+							<option value="5">в офисе - En la oficina</option>
+							<option value="6">в гостинице - En el hotel</option>
+							<option value="7">в школе - En la escuela</option>
+							<option value="8">в университете - En la universidad</option>
+							<option value="9">в парке - En el parque</option>
+							<option value="10">на улице - Afuera</option>
+							<option value="11">на прирóде - En la naturaleza</option>
+							<option value="12">в кафе - En el café</option>
+							<option value="13">в ресторане - En el restaurante</option>
+							<option value="14">на террасе - En la terraza</option>
+						</select>
+						<!-- <input type="text" class="listItem" placeholder="где?"> -->
+				</form>
+				<form id="formulario6" name="formulario6" class="selectContainer">
+					<label class="labelSelect" for="quien">когда?<p>¿Cuándo?</p></label>
+						<select name="cuando" id="cuando" class="form-select form-select-sm" aria-label=".form-select-sm example" onchange="getData6()">
+							<option selected disabled></option>
+							<option value="0">летом - Verano</option>
+							<option value="1">зимой - Invierno -</option>
+							<option value="2">Весной - Primavera</option>
+							<option value="3">осенью - Otoño</option>
+							<option value="4">сейчас - Ahora</option>
+							<option value="5">сегодня - Hoy</option>
+							<option value="6">завтра - Mañana</option>
+							<option value="7">послезавтра - Pasado mañana</option>
+							<option value="8">на выходных - El fin de semana</option>
+							<option value="9">в субботу - En sábado</option>
+							<option value="10">утром - En la mañana</option>
+							<option value="11">вечером - En la tarde</option>
+							<option value="12">ночью - En la noche</option>
+						</select>
+						<!-- <input type="text" class="listItem" placeholder="когда?"> -->
+				</form>			
+		</div>	
+	</div>
+
+	<div class="container-fluid">
+		<div class="fraseFinal">
+
+			<p id="output1"></p>
+			<p id="output2"></p>
+			<p id="output3"></p>
+			<p id="output4"></p>
+			<p id="output5"></p>
+			<p id="output6"></p>
+			<button type="button" id="oir" class="btn aQuien" onclick="fraseCompleta()"><span class="material-icons">play_circle_outline</span>
+			</button>
+		</div>
+	</div>
+	
+	<script src="js/buzz.js"></script>
+	<script src="js/script.js"></script>
+	<!--TOOLTIPS AND POPOVERS-->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

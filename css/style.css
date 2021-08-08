@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+header{
+	display: flex;
+	justify-content: center;
+	margin: 16px;
+}
+form{
+	display: flex;
+}
+.selectNav{
+	display: flex;
+	padding: 1em;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.selectContainer{
+	display: block;
+	text-align: center;
+	min-width: 140px !important;
+	max-width: 320px !important;
+	margin: 2px;
+}
+
+.listItem{
+	display: flex;
+	font-size: 12px;
+	margin-top: 8px;
+	width: 100%;
+}
+.listItem p{
+	font-size: 12px;
+}
+.form-select{
+	font-size: 0.7em;
+}
+.buttonPar{
+	font-size: 12px;
+}
+.accordions{
+	display: flex;
+}
+.listContainer{
+	display: flex;
+	justify-content: space-between;
+}
+.listLabel{
+	margin-left: 12px;
+}
+.labelSelect{
+	font-size: 18px;
+}
+.labelSelect p{
+	font-size: 12px;
+}
+.playButt{
+	display: flex;
+	align-self: center;
+	width: 50px;
+	justify-content: center;
+}
+.aQuien{
+	background-color: transparent;
+	border: 0;
+	justify-self: center;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.inputBox{
+	display: flex;
+	padding: 1em;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.accordion-header{
+	display: flex;
+}
+.optionArea{
+	display: block !important;
+}
+#output1{
+	margin: 4px;
+	padding: 4px;
+}
+.fraseFinal{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
