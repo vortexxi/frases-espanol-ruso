@@ -1,16 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 	font-family: 'Poppins', sans-serif;
 }
+
 header{
 	display: flex;
-	justify-content: center;
-	margin: 16px;
+	justify-content: space-around;
+	padding: 16px;
+	width: 100%;
+	background-color: rgba(255, 200, 200, 0.3);
 }
 form{
 	display: flex;
 }
+.informacion{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2em;
+	flex-wrap: wrap;
+}
+.infoParr{
+	max-width: 380px;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+.infoParr h5{
+	color: rgba(232, 0, 0, 1);
+}
+.infoParr p{
+	margin-top: 2em;
+	color: rgba(3 , 3, 193, 1);
+	text-align: justify;
+}
+
 .selectNav{
 	display: flex;
 	padding: 1em;
@@ -20,9 +45,16 @@ form{
 .selectContainer{
 	display: block;
 	text-align: center;
-	min-width: 140px !important;
-	max-width: 320px !important;
+	width: 160px !important;
 	margin: 2px;
+	color: rgba(3 , 3, 193, 1);
+}
+.headTitle{
+	font-size: 1.5em;
+	align-self: center;
+	margin-bottom: 0;
+	color: rgba(232, 0, 0, 1);
+	
 }
 
 .listItem{
@@ -36,13 +68,12 @@ form{
 }
 .form-select{
 	font-size: 0.7em;
+	color: rgba(3 , 3, 193, 1);
 }
 .buttonPar{
 	font-size: 12px;
 }
-.accordions{
-	display: flex;
-}
+
 .listContainer{
 	display: flex;
 	justify-content: space-between;
@@ -55,6 +86,7 @@ form{
 }
 .labelSelect p{
 	font-size: 12px;
+	color: rgba(206, 23, 23, 1);
 }
 .playButt{
 	display: flex;
@@ -63,10 +95,10 @@ form{
 	justify-content: center;
 }
 .aQuien{
-	background-color: transparent;
+	/*background-color: transparent;*/
 	border: 0;
 	justify-self: center;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	text-align: center;
 }
 .inputBox{
 	display: flex;
@@ -74,9 +106,7 @@ form{
 	flex-wrap: wrap;
 	justify-content: center;
 }
-.accordion-header{
-	display: flex;
-}
+
 .optionArea{
 	display: block !important;
 }
@@ -90,5 +120,12 @@ form{
 	align-items: center;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	color: rgba(3 , 3, 193, 1);
 }
-
+footer{
+	height: 80px;
+	width: 100%;
+	background-color: rgba(130, 130, 255, 0.3);
+}

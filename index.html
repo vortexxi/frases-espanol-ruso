@@ -10,28 +10,25 @@
 </head>
 <body>
 	<header>
-		<h3>FRASES RUSO-ESPAÑOL</h3>
+		<h1 class="headTitle">FRASES RUSO-ESPAÑOL</h1>
+		<button type="button" id="oir" class="btn aQuien" onclick="fraseCompleta()"><span class="material-icons" style="padding: 5px; border-radius: 20px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19); background-color: white; color: rgba(3 , 3, 193, 1);">play_circle_outline</span>
+		</button>
 	</header>
-	<!--https://www.youtube.com/watch?v=dFEgfckrJZQ-->
-	<div class="container-fluid">
+	<div class="container">
 		<div class="selectNav">			
 				<form id="formulario1" name="formulario1" class="selectContainer">
 					<label class="labelSelect" for="quien">Кому?<p>¿A quién?</p></label>
 						<select name="quien" id="quien" class="form-select form-select-sm" aria-label=".form-select-sm example" onchange="getData1()">
 							<!-- <option selected class="optionArea">Кому? - ¿A quién?</option> -->
 							<option value="none" selected disabled></option>
-							<option value="0" name="ami">мне - A mí</option>
-							<option value="1" name="ati">тебе - A ti</option>
-							<option value="2" name="ael">Ему - A él</option>
-							<option value="3" name="aella">Ей - A ella</option>
-							<option value="4" name="anosotros">Нам - A nosotros</option>
-							<option value="5" name="austedes">Вам - A ustedes</option>
-							<option value="6" name="aellos">Им - A ellos</option>
+							<option value="0" name="ami">мне - Me</option>
+							<option value="1" name="ati">тебе - Te</option>
+							<option value="2" name="ael">Ему - Le (él)</option>
+							<option value="3" name="aella">Ей - A (ella)</option>
+							<option value="4" name="anosotros">Нам - Nos</option>
+							<option value="5" name="austedes">Вам - Les (ustedes)</option>
+							<option value="6" name="aellos">Им - Les (ellos)</option>
 						</select>
-						<!-- <button>
-							<span id="btnQuien" class="material-icons">play_circle_outline</span>
-						</button>	 -->
-						<!-- <input id="input1" type="text" class="listItem" placeholder="Кому"> -->
 				</form>
 				<form id="formulario2" name="formulario2" class="selectContainer">
 					<label class="labelSelect" for="que">что<p>¿Qué?</p></label>
@@ -127,20 +124,32 @@
 		</div>	
 	</div>
 
-	<div class="container-fluid">
+	<div class="container">
 		<div class="fraseFinal">
-
 			<p id="output1"></p>
 			<p id="output2"></p>
 			<p id="output3"></p>
 			<p id="output4"></p>
 			<p id="output5"></p>
 			<p id="output6"></p>
-			<button type="button" id="oir" class="btn aQuien" onclick="fraseCompleta()"><span class="material-icons">play_circle_outline</span>
-			</button>
 		</div>
 	</div>
-	
+
+	<div class="container informacion">
+			<div class="infoParr">
+				<h5>Arma tu frase</h5>
+				<p>Para construir una frase, selecciona una opción para cada campo y presiona el botón de reproducción para escuchar la frase completa.</p>
+			</div>
+
+			<div>
+				<iframe width="380" height="270" src="https://www.youtube.com/embed/dFEgfckrJZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<p style="font-size: 12px; color: rgba(3 , 3, 193, 1);">Gracias al canal E-Russian por su tabla.</p>
+			</div>
+	</div>
+
+	<footer>
+	</footer>
+
 	<script src="js/buzz.js"></script>
 	<script src="js/script.js"></script>
 	<!--TOOLTIPS AND POPOVERS-->
